@@ -1,0 +1,288 @@
+/*------------------------------
+=BASIC SETUP
+------------------------------*/
+
+.drop-shadow {
+	-webkit-box-shadow: 3px 3px 7px #777;  
+}
+
+/* Round corners */
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.clearfix::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+/* Tell the browser to render HTML 5 elements as block */
+header, footer, section, aside, nav, article {
+	display: block;
+}
+
+body {
+	margin: 0px auto;
+	padding: 22px 0;
+	/*width: 940px;*/
+	font: 13px/22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: white;
+	color: #333;
+}
+
+.content {
+	padding: 22px 0 22px;
+}
+
+header {
+	/*margin: 0 0 50px;
+	border-bottom: 1px solid #222222;
+	*/
+}
+
+h1, h2 {
+	font-size: 28px;
+	line-height: 44px;
+	text-shadow: 1px 1px 3px #aaa;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 22px;
+	padding: 11px 0;
+}
+
+p {
+	padding-bottom: 22px;
+}
+
+nav {
+	float: right;
+	vertical-align: baseline;
+}
+
+nav ul {  
+    margin: 0 auto;
+    list-style: none;  
+}
+
+nav ul li {  
+    list-style-type: none;
+	display: inline-block;
+	margin: 0 44px 0 0;
+
+}  
+  
+    nav ul li a {  
+
+        font-size: 14px;  
+        line-height: 44px;  
+        text-align: center;  
+        text-decoration: none;  
+        color: #222222;
+		background-color: #cccccc;
+		border: 1px solid #888888;
+		padding: 5px 20px;
+		-moz-border-radius:    10px;
+	  	-webkit-border-radius: 10px;
+	  	border-radius:         10px;
+		font-weight: bold;
+		-webkit-box-shadow: 3px 3px 7px #aaa;
+ 		
+    }  
+  
+        nav ul li a:hover {  
+            color: #111111;
+			background-color: #bbbbbb;
+        }  
+
+        nav ul li a:active {  
+            position: relative;
+			top: 1px;
+        }
+  
+        nav ul li.selected a {  
+            color: #777777;  
+        }
+
+/* Sign up button */
+
+a.signup_button {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	text-align: center;
+	width: 190px;
+	color: #fff;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.19, rgb(127,159,240)),
+		color-stop(0.8, rgb(0,35,133))
+		);
+	background-image: -moz-linear-gradient(
+		center top,
+		rgb(127,159,240) 19%,
+		rgb(0,35,133) 80%
+		);
+	font-size: 150%;
+	font-weight: bold;
+	padding: 20px;
+	text-decoration: none;
+}
+
+#intro {  
+	margin-top: 66px;
+	padding: 44px;  
+	background: #002385;  
+	background-size: 100%;  
+	border-radius: 22px;
+	
+	/* Background-size not implemented yet */  
+    -webkit-background-size: 100%;  
+    -o-background-size: 100%;  
+    -khtml-background-size: 100%;  
+  
+    /* Border-radius not implemented yet */  
+    -moz-border-radius: 22px;  
+    -webkit-border-radius: 22px;
+
+	background-image: -webkit-gradient(
+	    linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.19, rgb(127,159,240)),
+	    color-stop(0.8, rgb(0,35,133))
+	);
+	background-image: -moz-linear-gradient(
+	    center top,
+	    rgb(127,159,240) 19%,
+	    rgb(0,35,133) 80%
+	);
+
+}
+
+#intro h2, #intro p {  
+    width: 336px;  
+}  
+  
+#intro h2 {  
+    padding: 0 0 22px 0;  
+    font-weight: normal;
+    color: #fff;  
+}  
+  
+#intro p {  
+    padding: 0;  
+    color: #859dff;  
+}  
+
+
+/*------------------------------
+=CONTENT AREA AND SIDEBAR LAYOUT
+------------------------------*/
+
+#content {
+    
+}
+
+
+
+	/*------------------------------
+	=SIDEBAR
+	------------------------------*/
+	aside section {
+	    margin: 22px 0 0 22px;
+	    padding: 11px 22px;
+	    background: #d0d0d0;
+
+
+	    /* Border-radius not implemented yet */
+	    -moz-border-radius: 11px;
+	    -webkit-border-radius: 11px;
+	}
+
+	    aside section ul {
+	        margin: 0 0 0 22px;
+	        list-style: none;
+	    }
+
+	        aside section ul li a {
+	            display: block;
+	            text-decoration: none;
+	            color: #000;
+	        }
+
+	            aside section ul li a:hover {
+	                text-decoration: underline;
+	            }
+
+
+
+	/*------------------------------
+	=FOOTER
+	------------------------------*/
+	footer {
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    background: #222;
+		-moz-box-shadow:inset 0 10px 10px #000000;
+	    -webkit-box-shadow:inset 0 10px 10px #000000;
+	}
+
+	    footer div {
+	        display: table;
+	        margin: 0 auto;
+	        padding: 44px 0;
+	        width: 940px;
+	        color: #777;
+	    }
+
+	        footer div section {
+	            display: table-cell;
+	            width: 300px;
+	        }
+
+	        footer div #about, footer div #blogroll {
+	            padding-right: 20px;
+	        }
+
+	    footer h3 {
+	        color: #FFF;
+	    }
+
+	    footer a {
+	        color: #999;
+	    }
+
+	        footer a:hover {
+	            color: #FFF;
+	            text-decoration: none;
+	        }
+
+	    footer ul {
+	        margin: 0 0 0 40px;
+	        list-style: square;
+	        color: #565656;
+	    }
+
+	        footer ul li a {
+	            display: block;
+	        }
