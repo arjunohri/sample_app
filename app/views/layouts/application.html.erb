@@ -2,6 +2,7 @@
 <html>
   <head>
     <title><%= title %></title>
+	<%= csrf_meta_tag %>
 	<%= render 'layouts/stylesheets' %>
   </head>
   <body>
@@ -9,6 +10,6 @@
 	  <section>
 	    <%= yield %>
 	  </section>
-
+	<%= render 'layouts/footer' %>
   </body>
 </html>
